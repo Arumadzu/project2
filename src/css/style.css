@@ -438,7 +438,27 @@ table {
   box-sizing: border-box;
 }
 
-@ff {}/* line 13, ../Курс WEB/Project2/src/sass/style.sass */
+@font-face {
+  font-family: "MontserratT";
+  src: url("../fonts/Montserrat-Regular.ttf");
+  font-weight: regular;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MontserratT";
+  src: url("../fonts/Montserrat-SemiBold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* line 22, ../Курс WEB/Project2/src/sass/style.sass */
+html {
+  font-family: "MontserratT";
+  font-weight: regular;
+}
+
+/* line 30, ../Курс WEB/Project2/src/sass/style.sass */
 .container {
   position: relative;
   max-width: 1140px;
@@ -446,7 +466,7 @@ table {
   owerflow: hidden;
 }
 
-/* line 18, ../Курс WEB/Project2/src/sass/style.sass */
+/* line 35, ../Курс WEB/Project2/src/sass/style.sass */
 .main-section {
   position: relative;
   min-height: 800px;
@@ -456,7 +476,7 @@ table {
   owerflow: hidden;
 }
 
-/* line 25, ../Курс WEB/Project2/src/sass/style.sass */
+/* line 42, ../Курс WEB/Project2/src/sass/style.sass */
 .main-section__nav-container {
   display: flex;
   flex-direction: row;
@@ -465,61 +485,68 @@ table {
   align-items: center;
 }
 
-/* line 31, ../Курс WEB/Project2/src/sass/style.sass */
+/* line 48, ../Курс WEB/Project2/src/sass/style.sass */
 .main-section__logo {
   width: 134px;
 }
 
-/* line 33, ../Курс WEB/Project2/src/sass/style.sass */
+/* line 50, ../Курс WEB/Project2/src/sass/style.sass */
 .main-section__content-container {
   position: relative;
   display: flex;
   flex-direction: row;
 }
 
-/* line 37, ../Курс WEB/Project2/src/sass/style.sass */
+/* line 54, ../Курс WEB/Project2/src/sass/style.sass */
 .main-section__first-elipse {
   position: absolute;
   top: 140px;
   right: 121px;
 }
 
-/* line 41, ../Курс WEB/Project2/src/sass/style.sass */
+/* line 58, ../Курс WEB/Project2/src/sass/style.sass */
 .main-section__second-elipse {
   position: absolute;
   right: -100px;
   top: 650px;
 }
 
-/* line 48, ../Курс WEB/Project2/src/sass/style.sass */
+/* line 65, ../Курс WEB/Project2/src/sass/style.sass */
 .nav-menu__list {
   display: flex;
   flex-direction: row;
 }
 
-/* line 51, ../Курс WEB/Project2/src/sass/style.sass */
+/* line 68, ../Курс WEB/Project2/src/sass/style.sass */
 .nav-menu__list-item {
+  font-weight: bold;
   margin-right: 64px;
   font-size: 18px;
 }
 
-/* line 54, ../Курс WEB/Project2/src/sass/style.sass */
+/* line 72, ../Курс WEB/Project2/src/sass/style.sass */
 .nav-menu__list-item:last-shild {
   margin-right: 0px;
 }
 
-/* line 56, ../Курс WEB/Project2/src/sass/style.sass */
+/* line 74, ../Курс WEB/Project2/src/sass/style.sass */
+.nav-menu a {
+  text-decoration: none;
+  color: black;
+}
+
+/* line 78, ../Курс WEB/Project2/src/sass/style.sass */
 .left-wrapper {
   position: relative;
 }
 
-/* line 58, ../Курс WEB/Project2/src/sass/style.sass */
+/* line 80, ../Курс WEB/Project2/src/sass/style.sass */
 .left-wrapper img {
   position: relative;
   z-index: 5;
 }
 
-/* line 61, ../Курс WEB/Project2/src/sass/style.sass */
+/* line 83, ../Курс WEB/Project2/src/sass/style.sass */
 .left-wrapper__rectangle-blue {
   position: absolute;
   top: 140px;
@@ -533,7 +560,7 @@ table {
   z-index: 2;
 }
 
-/* line 72, ../Курс WEB/Project2/src/sass/style.sass */
+/* line 94, ../Курс WEB/Project2/src/sass/style.sass */
 .left-wrapper__rectangle-orange {
   position: absolute;
   width: 618.428px;
@@ -547,7 +574,7 @@ table {
   z-index: 3;
 }
 
-/* line 83, ../Курс WEB/Project2/src/sass/style.sass */
+/* line 105, ../Курс WEB/Project2/src/sass/style.sass */
 .left-wrapper__rectangle-grey {
   position: absolute;
   width: 608.968px;
@@ -561,7 +588,7 @@ table {
   z-index: 1;
 }
 
-/* line 96, ../Курс WEB/Project2/src/sass/style.sass */
+/* line 118, ../Курс WEB/Project2/src/sass/style.sass */
 .right-wrapper {
   width: 372px;
   position: absolute;
@@ -570,30 +597,30 @@ table {
   z-index: 1;
 }
 
-/* line 102, ../Курс WEB/Project2/src/sass/style.sass */
+/* line 124, ../Курс WEB/Project2/src/sass/style.sass */
 .right-wrapper__icons-box {
   margin-bottom: 1px;
   padding-left: 10px;
 }
 
-/* line 105, ../Курс WEB/Project2/src/sass/style.sass */
+/* line 127, ../Курс WEB/Project2/src/sass/style.sass */
 .right-wrapper__title {
   margin-bottom: 5px;
 }
 
-/* line 107, ../Курс WEB/Project2/src/sass/style.sass */
+/* line 129, ../Курс WEB/Project2/src/sass/style.sass */
 .right-wrapper__text {
   font-size: 16px;
   margin-bottom: 20px;
 }
 
-/* line 114, ../Курс WEB/Project2/src/sass/style.sass */
+/* line 136, ../Курс WEB/Project2/src/sass/style.sass */
 .icons {
   display: flex;
   flex-direction: row;
 }
 
-/* line 117, ../Курс WEB/Project2/src/sass/style.sass */
+/* line 139, ../Курс WEB/Project2/src/sass/style.sass */
 .icons__item {
   display: flex;
   justify-content: center;
@@ -605,23 +632,24 @@ table {
   margin-right: 17px;
 }
 
-/* line 126, ../Курс WEB/Project2/src/sass/style.sass */
+/* line 148, ../Курс WEB/Project2/src/sass/style.sass */
 .icons__item:last-child {
   margin-right: 0px;
 }
 
-/* line 128, ../Курс WEB/Project2/src/sass/style.sass */
+/* line 150, ../Курс WEB/Project2/src/sass/style.sass */
 .icons__item i {
   font-style: 21px;
 }
 
-/* line 132, ../Курс WEB/Project2/src/sass/style.sass */
+/* line 154, ../Курс WEB/Project2/src/sass/style.sass */
 .title {
   font-size: 72px;
   position: relative;
+  font-weight: bold;
 }
 
-/* line 135, ../Курс WEB/Project2/src/sass/style.sass */
+/* line 158, ../Курс WEB/Project2/src/sass/style.sass */
 .title__hr {
   position: absolute;
   width: 65px;
@@ -631,12 +659,12 @@ table {
   border-top: 1px solid black;
 }
 
-/* line 143, ../Курс WEB/Project2/src/sass/style.sass */
+/* line 166, ../Курс WEB/Project2/src/sass/style.sass */
 .buttons {
   display: inline-flex;
 }
 
-/* line 145, ../Курс WEB/Project2/src/sass/style.sass */
+/* line 168, ../Курс WEB/Project2/src/sass/style.sass */
 .buttons__main-btn {
   margin-right: 32px;
   width: 200px;
@@ -649,23 +677,23 @@ table {
   color: white;
 }
 
-/* line 155, ../Курс WEB/Project2/src/sass/style.sass */
+/* line 178, ../Курс WEB/Project2/src/sass/style.sass */
 .buttons__icon-btn {
   display: inline-flex;
   align-items: center;
 }
 
-/* line 158, ../Курс WEB/Project2/src/sass/style.sass */
+/* line 181, ../Курс WEB/Project2/src/sass/style.sass */
 .buttons__icon-btn img {
   margin-right: 12px;
 }
 
-/* line 160, ../Курс WEB/Project2/src/sass/style.sass */
+/* line 183, ../Курс WEB/Project2/src/sass/style.sass */
 .buttons__text {
   font-size: 16px;
 }
 
-/* line 165, ../Курс WEB/Project2/src/sass/style.sass */
+/* line 188, ../Курс WEB/Project2/src/sass/style.sass */
 .elipse {
   width: 194px;
   height: 194px;
@@ -676,13 +704,13 @@ table {
   align-items: center;
 }
 
-/* line 173, ../Курс WEB/Project2/src/sass/style.sass */
+/* line 196, ../Курс WEB/Project2/src/sass/style.sass */
 .elipse_dig {
   width: 290px;
   height: 290px;
 }
 
-/* line 176, ../Курс WEB/Project2/src/sass/style.sass */
+/* line 199, ../Курс WEB/Project2/src/sass/style.sass */
 .elipse__subtract {
   width: 133px;
   height: 133px;
@@ -690,56 +718,56 @@ table {
   border-radius: 50%;
 }
 
-/* line 181, ../Курс WEB/Project2/src/sass/style.sass */
+/* line 204, ../Курс WEB/Project2/src/sass/style.sass */
 .elipse__subtract_big {
   width: 189px;
   height: 189px;
 }
 
-/* line 188, ../Курс WEB/Project2/src/sass/style.sass */
+/* line 211, ../Курс WEB/Project2/src/sass/style.sass */
 .second-section {
   min-height: 700px;
 }
 
-/* line 190, ../Курс WEB/Project2/src/sass/style.sass */
+/* line 213, ../Курс WEB/Project2/src/sass/style.sass */
 .second-section__container {
   padding-top: 32px;
   position: relative;
 }
 
-/* line 193, ../Курс WEB/Project2/src/sass/style.sass */
+/* line 216, ../Курс WEB/Project2/src/sass/style.sass */
 .second-section__title {
   margin-bottom: 40px;
 }
 
-/* line 195, ../Курс WEB/Project2/src/sass/style.sass */
+/* line 218, ../Курс WEB/Project2/src/sass/style.sass */
 .second-section__cards-box {
   display: inline-flex;
   margin-bottom: 25px;
 }
 
-/* line 198, ../Курс WEB/Project2/src/sass/style.sass */
+/* line 221, ../Курс WEB/Project2/src/sass/style.sass */
 .second-section__cards-item {
   margin-right: 30px;
 }
 
-/* line 200, ../Курс WEB/Project2/src/sass/style.sass */
+/* line 223, ../Курс WEB/Project2/src/sass/style.sass */
 .second-section__cards-item:last-child {
   margin-right: 0;
 }
 
-/* line 202, ../Курс WEB/Project2/src/sass/style.sass */
+/* line 225, ../Курс WEB/Project2/src/sass/style.sass */
 .second-section__icons-box {
   display: flex;
   justify-content: space-evenly;
 }
 
-/* line 207, ../Курс WEB/Project2/src/sass/style.sass */
+/* line 230, ../Курс WEB/Project2/src/sass/style.sass */
 .second-section__icons-item:last-child {
   margin-right: 0;
 }
 
-/* line 209, ../Курс WEB/Project2/src/sass/style.sass */
+/* line 232, ../Курс WEB/Project2/src/sass/style.sass */
 .second-section__first-elipse {
   position: absolute;
   top: 80px;
@@ -747,7 +775,7 @@ table {
   z-index: -1;
 }
 
-/* line 214, ../Курс WEB/Project2/src/sass/style.sass */
+/* line 237, ../Курс WEB/Project2/src/sass/style.sass */
 .second-section__second-elipse {
   position: absolute;
   top: 364px;
@@ -755,7 +783,7 @@ table {
   z-index: -1;
 }
 
-/* line 222, ../Курс WEB/Project2/src/sass/style.sass */
+/* line 245, ../Курс WEB/Project2/src/sass/style.sass */
 .cards-item {
   position: relative;
   width: 360px;
@@ -766,12 +794,12 @@ table {
   align-items: flex-end;
 }
 
-/* line 230, ../Курс WEB/Project2/src/sass/style.sass */
+/* line 253, ../Курс WEB/Project2/src/sass/style.sass */
 .cards-item__img {
   height: 335px;
 }
 
-/* line 232, ../Курс WEB/Project2/src/sass/style.sass */
+/* line 255, ../Курс WEB/Project2/src/sass/style.sass */
 .cards-item__text {
   width: 200px;
   font-size: 36px;
@@ -780,51 +808,53 @@ table {
   position: absolute;
   top: 145px;
   right: -8px;
+  font-weight: bold;
 }
 
-/* line 240, ../Курс WEB/Project2/src/sass/style.sass */
+/* line 264, ../Курс WEB/Project2/src/sass/style.sass */
 .cards-item_orange {
   background: #F28B64;
 }
 
-/* line 243, ../Курс WEB/Project2/src/sass/style.sass */
+/* line 267, ../Курс WEB/Project2/src/sass/style.sass */
 .cards-item_blue {
   background: #5290EA;
 }
 
-/* line 246, ../Курс WEB/Project2/src/sass/style.sass */
+/* line 270, ../Курс WEB/Project2/src/sass/style.sass */
 .icons-item {
   display: inline-flex;
   align-items: center;
 }
 
-/* line 249, ../Курс WEB/Project2/src/sass/style.sass */
+/* line 273, ../Курс WEB/Project2/src/sass/style.sass */
 .icons-item:last-child {
   margin-right: 0;
 }
 
-/* line 251, ../Курс WEB/Project2/src/sass/style.sass */
+/* line 275, ../Курс WEB/Project2/src/sass/style.sass */
 .icons-item__img {
   margin-right: 20px;
 }
 
-/* line 253, ../Курс WEB/Project2/src/sass/style.sass */
+/* line 277, ../Курс WEB/Project2/src/sass/style.sass */
 .icons-item__text {
   font-size: 18px;
 }
 
-/* line 255, ../Курс WEB/Project2/src/sass/style.sass */
+/* line 279, ../Курс WEB/Project2/src/sass/style.sass */
 .icons-item__text span {
   font-size: 48px;
+  font-weight: bold;
 }
 
-/* line 258, ../Курс WEB/Project2/src/sass/style.sass */
+/* line 283, ../Курс WEB/Project2/src/sass/style.sass */
 .third-section {
   position: relative;
   background: #f0f0f0;
 }
 
-/* line 261, ../Курс WEB/Project2/src/sass/style.sass */
+/* line 286, ../Курс WEB/Project2/src/sass/style.sass */
 .third-section__container {
   position: relative;
   padding-top: 46px;
@@ -833,7 +863,7 @@ table {
   min-height: 640px;
 }
 
-/* line 267, ../Курс WEB/Project2/src/sass/style.sass */
+/* line 292, ../Курс WEB/Project2/src/sass/style.sass */
 .third-section__left-title {
   position: relative;
   top: 287px;
@@ -841,7 +871,7 @@ table {
   z-index: 2;
 }
 
-/* line 272, ../Курс WEB/Project2/src/sass/style.sass */
+/* line 297, ../Курс WEB/Project2/src/sass/style.sass */
 .third-section__subtract {
   position: relative;
   top: 160px;
@@ -849,14 +879,14 @@ table {
   z-index: 1;
 }
 
-/* line 277, ../Курс WEB/Project2/src/sass/style.sass */
+/* line 302, ../Курс WEB/Project2/src/sass/style.sass */
 .third-section__elipse {
   position: relative;
   top: -147px;
   right: -108px;
 }
 
-/* line 282, ../Курс WEB/Project2/src/sass/style.sass */
+/* line 307, ../Курс WEB/Project2/src/sass/style.sass */
 .third-section__right-wrapper {
   position: relative;
   top: 0px;
@@ -865,37 +895,37 @@ table {
   margin-bottom: 80px;
 }
 
-/* line 289, ../Курс WEB/Project2/src/sass/style.sass */
+/* line 314, ../Курс WEB/Project2/src/sass/style.sass */
 .third-section__title {
   margin-bottom: 20px;
 }
 
-/* line 291, ../Курс WEB/Project2/src/sass/style.sass */
+/* line 316, ../Курс WEB/Project2/src/sass/style.sass */
 .third-section__text {
   font-size: 18px;
   margin-bottom: 30px;
 }
 
-/* line 295, ../Курс WEB/Project2/src/sass/style.sass */
+/* line 320, ../Курс WEB/Project2/src/sass/style.sass */
 .third-section__second-elipse {
   position: absolute;
   top: -139px;
   right: -120px;
 }
 
-/* line 300, ../Курс WEB/Project2/src/sass/style.sass */
+/* line 325, ../Курс WEB/Project2/src/sass/style.sass */
 .title__hr_top {
   bottom: 75px;
 }
 
-/* line 304, ../Курс WEB/Project2/src/sass/style.sass */
+/* line 329, ../Курс WEB/Project2/src/sass/style.sass */
 .footer__img {
   position: absolute;
   left: -258px;
   bottom: 0px;
 }
 
-/* line 308, ../Курс WEB/Project2/src/sass/style.sass */
+/* line 333, ../Курс WEB/Project2/src/sass/style.sass */
 .footer__container {
   min-height: 272px;
   display: flex;
@@ -903,7 +933,7 @@ table {
   justify-content: flex-end;
 }
 
-/* line 313, ../Курс WEB/Project2/src/sass/style.sass */
+/* line 338, ../Курс WEB/Project2/src/sass/style.sass */
 .footer__title {
   margin-bottom: 20px;
 }
